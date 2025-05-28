@@ -5,7 +5,7 @@
  */
 package br.org.coletivoJava.testes.erp;
 
-import br.org.coletivoJava.fw.api.erp.ia.ERPIA;
+import br.org.coletivoJava.fw.api.erp.ia.escopo.ERPIA;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 //import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 import org.apache.logging.log4j.LogManager;

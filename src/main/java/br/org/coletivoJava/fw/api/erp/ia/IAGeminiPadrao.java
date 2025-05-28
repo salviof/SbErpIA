@@ -1,9 +1,9 @@
 package br.org.coletivoJava.fw.api.erp.ia;
 
 import javax.inject.Qualifier;
-import br.org.coletivoJava.fw.api.erp.ia.ItfErpIA;
+import br.org.coletivoJava.fw.api.erp.ia.escopo.ItfErpIA;
 import com.super_bits.modulosSB.SBCore.modulos.erp.InfoReferenciaApiErp;
-import br.org.coletivoJava.fw.api.erp.ia.ERPIA;
+import br.org.coletivoJava.fw.api.erp.ia.escopo.ERPIA;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

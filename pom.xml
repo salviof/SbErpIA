@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.org.coletivoJava.fw.api.erp.ia</groupId>
     <artifactId>SbErpIA</artifactId>
-    <name>ERPs Api CRMs</name>
+    <name>ERPs IAS</name>
     <version>1.0.0-RC-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
