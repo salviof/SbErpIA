@@ -12,6 +12,8 @@ import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basic
  */
 public interface ItfErpIA {
 
+    public boolean personaCriarAtualizar(ItfPersona pPersona);
+
     public String obterResposta(ItfPersona persona, ItfUsuario pUSuario, String texto);
 
     public String obterResposta(ItfUsuario pUSuario, String texto);
