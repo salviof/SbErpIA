@@ -4,13 +4,12 @@
  */
 package br.org.coletivoJava.fw.api.erp.ia.escopo;
 
-import com.super_bits.modulosSB.SBCore.ConfigGeral.arquivosConfiguracao.ItfFabConfigModulo;
 
 /**
  *
  * @author salvio
  */
-public enum FabConfigErpIA implements ItfFabConfigModulo {
+public enum FabConfigErpIA implements com.super_bits.modulosSB.SBCore.ConfigGeral.arquivosConfiguracao.ItfFabConfigModulo {
 
     NOME_MODELO_PERSONA_PADRAO;
 

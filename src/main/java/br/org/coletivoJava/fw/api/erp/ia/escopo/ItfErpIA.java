@@ -12,11 +12,11 @@ import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basic
  */
 public interface ItfErpIA {
 
-    public boolean personaCriarAtualizar(ItfPersona pPersona);
+    public String personaCriarAtualizar(String pNomePersona, String pPromptSystem);
 
-    public String obterResposta(ItfPersona persona, ItfUsuario pUSuario, String texto);
+    public String obterResposta(String pNomePersona, String texto);
 
-    public String obterResposta(ItfUsuario pUSuario, String texto);
+    public String obterResposta(String pNomePersona, String texto, ItfUsuario pUsuario);
 
     public String obterRespostaUsuarioLogado(String texto);
 

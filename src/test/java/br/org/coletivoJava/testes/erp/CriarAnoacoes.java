@@ -7,12 +7,10 @@ package br.org.coletivoJava.testes.erp;
 
 import br.org.coletivoJava.fw.api.erp.ia.escopo.ERPIA;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
-//import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 import org.apache.logging.log4j.LogManager;
 import org.coletivojava.fw.api.objetoNativo.log.LogPadraoSB;
 import org.junit.Test;
-import testes.geradorCodigo.erp.GeradorAPIERP;
-//import testesFW.geradorDeCodigo.erp.GeradorAPIERP;
+
 
 /**
  *
@@ -28,8 +26,8 @@ public class CriarAnoacoes {
             SBCore.configurar(new ConfigCoreApiErpIA(), SBCore.ESTADO_APP.DESENVOLVIMENTO);
             for (ERPIA trassp : ERPIA.values()) {
 
-                GeradorAPIERP gerador = new GeradorAPIERP(trassp);
-                gerador.salvarEmDiretorioPadraoSubstituindoAnterior();
+//                GeradorAPIERP gerador = new GeradorAPIERP(trassp);
+//                gerador.salvarEmDiretorioPadraoSubstituindoAnterior();
             }
         } catch (Throwable t) {
             LogManager.getLogger(LogPadraoSB.class).error("Erro Criando anotações", t);
