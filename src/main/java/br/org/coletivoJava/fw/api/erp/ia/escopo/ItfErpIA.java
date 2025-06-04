@@ -4,22 +4,24 @@
  */
 package br.org.coletivoJava.fw.api.erp.ia.escopo;
 
+import com.super_bits.modulosSB.SBCore.modulos.Controller.Interfaces.ItfRespostaAcaoDoSistema;
 import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfUsuario;
 
 /**
- *
  * @author salvio
  */
 public interface ItfErpIA {
 
-    public String personaCriarAtualizar(String pNomePersona, String pPromptSystem);
+    public ItfPersona gerarPersona(String pNomePersona, String pPromptSystem);
 
-    public String obterResposta(String pNomePersona, String texto);
+    public String obterResposta(ItfPersona pNomePersona, ItfUsuario pUsuario, String pMensagem);
 
-    public String obterResposta(String pNomePersona, String texto, ItfUsuario pUsuario);
+    public String obterRespostaUsuarioLogado(ItfPersona pNomePersona, String pMensagem);
 
-    public String obterRespostaUsuarioLogado(String texto);
+    public String limparSessao(ItfPersona pNomePersona, ItfUsuario pUsuario);
 
-    public String obterRespostaUsuarioLogado(ItfPersona persona, String texto);
+    public String limparSessaoUsuarioLogado(ItfPersona pNomePersona);
+
+
 
 }
