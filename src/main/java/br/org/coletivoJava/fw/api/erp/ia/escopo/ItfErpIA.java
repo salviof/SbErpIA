@@ -18,10 +18,8 @@ public interface ItfErpIA {
 
     public String obterRespostaUsuarioLogado(ItfPersona pNomePersona, String pMensagem);
 
-    public String limparSessao(ItfPersona pNomePersona, ItfUsuario pUsuario);
+    public String limparSessao(ItfPersona pNomePersona, ItfUsuario pUsuario) throws Exception;
 
     public String limparSessaoUsuarioLogado(ItfPersona pNomePersona);
-
-
 
 }
