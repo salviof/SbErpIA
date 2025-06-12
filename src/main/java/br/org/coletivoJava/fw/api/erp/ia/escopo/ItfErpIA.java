@@ -4,15 +4,16 @@
  */
 package br.org.coletivoJava.fw.api.erp.ia.escopo;
 
-import com.super_bits.modulosSB.SBCore.modulos.Controller.Interfaces.ItfRespostaAcaoDoSistema;
 import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfUsuario;
+
+import javax.annotation.Nullable;
 
 /**
  * @author salvio
  */
 public interface ItfErpIA {
 
-    public ItfPersona gerarPersona(String pNomePersona, String pPromptSystem);
+    public String gerarPersona(String pNomePersona, String pPromptSystem, @Nullable String template, @Nullable Double temperature, @Nullable Boolean stream, @Nullable String quantize);
 
     public String obterResposta(ItfPersona pNomePersona, ItfUsuario pUsuario, String pMensagem);
 
