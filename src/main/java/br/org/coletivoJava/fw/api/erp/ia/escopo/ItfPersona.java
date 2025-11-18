@@ -4,14 +4,14 @@
  */
 package br.org.coletivoJava.fw.api.erp.ia.escopo;
 
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfBeanSimples;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ComoEntidadeSimples;
 
 import java.util.List;
 
 /**
  * @author salvio
  */
-public interface ItfPersona extends ItfBeanSimples {
+public interface ItfPersona extends ComoEntidadeSimples {
 
     public String getDescricao();
 
