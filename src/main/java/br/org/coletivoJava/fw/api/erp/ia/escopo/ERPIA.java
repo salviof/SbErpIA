@@ -9,10 +9,10 @@ package br.org.coletivoJava.fw.api.erp.ia.escopo;
  *
  * @author desenvolvedorninja01
  */
-import com.super_bits.modulosSB.SBCore.modulos.erp.ApiERPColetivoJavaFW;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
+import com.super_bits.modulosSB.SBCore.modulos.erp.InfoApiERPCarameloCode;
 
-@ApiERPColetivoJavaFW(descricaoApi = "IA ERP", nomeApi = "IA", slugInicial = "IA")
+@InfoApiERPCarameloCode(descricaoApi = "IA ERP", nomeApi = "IA", slugInicial = "IA")
 public enum ERPIA implements ItfApiErpSuperBits<ItfErpIA> {
 
     OLHAMA,
