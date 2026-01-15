@@ -13,13 +13,14 @@ import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
 import com.super_bits.modulosSB.SBCore.modulos.erp.InfoApiERPCarameloCode;
 
 @InfoApiERPCarameloCode(descricaoApi = "IA ERP", nomeApi = "IA", slugInicial = "IA")
-public enum ERPIA implements ItfApiErpSuperBits<ItfErpIA> {
+public enum ERP_IA implements ItfApiErpSuperBits<ItfErpIA> {
 
     OLHAMA,
     DEEPSEEK,
     GPT,
     GEMINI,
-    COPILOT;
+    COPILOT,
+    AZURE_OPENAI;
 
     @Override
     public Class<? extends ItfErpIA> getInterface() {

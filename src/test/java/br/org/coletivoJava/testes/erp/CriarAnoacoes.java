@@ -5,7 +5,7 @@
  */
 package br.org.coletivoJava.testes.erp;
 
-import br.org.coletivoJava.fw.api.erp.ia.escopo.ERPIA;
+import br.org.coletivoJava.fw.api.erp.ia.escopo.ERP_IA;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 import org.apache.logging.log4j.LogManager;
 import org.coletivojava.fw.api.objetoNativo.log.LogPadraoSB;
@@ -24,7 +24,7 @@ public class CriarAnoacoes {
         try {
 
             SBCore.configurar(new ConfigCoreApiErpIA(), SBCore.ESTADO_APP.DESENVOLVIMENTO);
-            for (ERPIA trassp : ERPIA.values()) {
+            for (ERP_IA trassp : ERP_IA.values()) {
 
 //                GeradorAPIERP gerador = new GeradorAPIERP(trassp);
 //                gerador.salvarEmDiretorioPadraoSubstituindoAnterior();
