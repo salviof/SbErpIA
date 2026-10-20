@@ -4,7 +4,10 @@
  */
 package br.org.coletivoJava.fw.api.erp.ia.escopo;
 
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.ia.ComoExecucaoIA;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.basico.ComoEntidadeSimples;
 import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.basico.ComoUsuario;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.ia.ComoPersona;
 
 import javax.annotation.Nullable;
 
@@ -15,12 +18,12 @@ public interface ItfErpIA {
 
     public String gerarPersona(String pNomePersona, String pPromptSystem, @Nullable String template, @Nullable Double temperature, @Nullable Boolean stream, @Nullable String quantize);
 
-    public String obterResposta(ItfPersona pNomePersona, ComoUsuario pUsuario, String pMensagem);
+    public String obterResposta(ComoPersona pPersona, ComoUsuario pUsuario, String pMensagem);
 
-    public String obterRespostaUsuarioLogado(ItfPersona pNomePersona, String pMensagem);
+    public String obterRespostaUsuarioLogado(ComoPersona pPersona, String pMensagem);
 
-    public String limparSessao(ItfPersona pNomePersona, ComoUsuario pUsuario) throws Exception;
+    public String limparSessao(ComoPersona pNomePersona, ComoUsuario pUsuario) throws Exception;
 
-    public String limparSessaoUsuarioLogado(ItfPersona pNomePersona);
+    public String limparSessaoUsuarioLogado(ComoPersona pPersona);
 
 }

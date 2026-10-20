@@ -8,10 +8,10 @@ package br.org.coletivoJava.testes.erp;
 //import com.super_bits.modulosSB.SBCore.ConfigGeral.ConfiguradorCoreDeProjetoJarAbstrato;
 import br.org.coletivoJava.fw.api.erp.ia.escopo.FabConfigErpIA;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.ConfiguradorCoreDeProjetoJarAbstrato;
-import com.super_bits.modulosSB.SBCore.ConfigGeral.ItfConfiguracaoCoreCustomizavel;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
+import com.super_bits.modulosSB.SBCore.ConfigGeral.ComoContextoExecCustomizavel;
 
-//import com.super_bits.modulosSB.SBCore.ConfigGeral.ItfConfiguracaoCoreCustomizavel;
+//import com.super_bits.modulosSB.SBCore.ConfigGeral.ComoContextoExecCustomizavel;
 /**
  *
  * @author desenvolvedor
@@ -19,11 +19,11 @@ import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 public class ConfigCoreApiErpIA extends ConfiguradorCoreDeProjetoJarAbstrato {
 
     @Override
-    public void defineFabricasDeACao(ItfConfiguracaoCoreCustomizavel pConfig) {
+    public void defineFabricasDeACao(ComoContextoExecCustomizavel pConfig) {
 
     }
 
     //@Override
-    //public void defineFabricasDeACao(ItfConfiguracaoCoreCustomizavel pConfig) {
+    //public void defineFabricasDeACao(ComoContextoExecCustomizavel pConfig) {
     //}
 }

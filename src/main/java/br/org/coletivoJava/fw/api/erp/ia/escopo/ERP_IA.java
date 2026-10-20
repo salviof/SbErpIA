@@ -20,7 +20,8 @@ public enum ERP_IA implements ItfApiErpSuperBits<ItfErpIA> {
     GPT,
     GEMINI,
     COPILOT,
-    AZURE_OPENAI;
+    AZURE_OPENAI,
+    CLAUDE;
 
     @Override
     public Class<? extends ItfErpIA> getInterface() {
